@@ -21,6 +21,7 @@ declare module '@vue/reactivity' {
   }
 }
 
+console.log('patchProp----',patchProp)
 const rendererOptions = {
   patchProp,
   ...nodeOps
@@ -32,6 +33,7 @@ let renderer: Renderer | HydrationRenderer
 
 let enabledHydration = false
 
+// 单例
 function ensureRenderer() {
   return renderer || (renderer = createRenderer(rendererOptions))
 }
@@ -53,12 +55,13 @@ export const hydrate = ((...args) => {
   ensureHydrationRenderer().hydrate(...args)
 }) as RootHydrateFunction
 
-export const createApp = ((...args) => {
-  const app = ensureRenderer().createApp(...args)
 
-  if (__DEV__) {
-    injectNativeTagCheck(app)
-  }
+
+
+// 这里是最开始的地方
+export const createApp = ((...args) => {
+
+  const app = ensureRenderer().createApp(...args)
 
   const { mount } = app
   app.mount = (containerOrSelector: Element | string): any => {
@@ -76,7 +79,13 @@ export const createApp = ((...args) => {
   }
 
   return app
+
 }) as CreateAppFunction<Element>
+
+
+
+
+
 
 export const createSSRApp = ((...args) => {
   const app = ensureHydrationRenderer().createApp(...args)

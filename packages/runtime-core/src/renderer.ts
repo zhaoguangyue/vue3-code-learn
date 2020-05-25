@@ -350,6 +350,7 @@ export function createRenderer<
   HostNode = RendererNode,
   HostElement = RendererElement
 >(options: RendererOptions<HostNode, HostElement>) {
+  console.log('options', options)
   return baseCreateRenderer<HostNode, HostElement>(options)
 }
 
@@ -379,6 +380,7 @@ function baseCreateRenderer(
   options: RendererOptions,
   createHydrationFns?: typeof createHydrationFunctions
 ): any {
+  console.log()
   const {
     insert: hostInsert,
     remove: hostRemove,

@@ -1,7 +1,7 @@
 ## Template Explorer
 
 Live explorer for template compilation output.
-
+用于模板编译输出。
 To run:
 
 - `yarn dev-compiler`

@@ -399,6 +399,7 @@ function _createVNode(
     currentBlock.push(vnode)
   }
 
+  console.log('vnode-----',vnode)
   return vnode
 }
 

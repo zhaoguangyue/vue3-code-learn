@@ -1,3 +1,20 @@
+/**
+ * 根据index目录
+ * // 导出响应式相关的
+export {
+  reactive,
+  readonly,
+  isReactive,
+  isReadonly,
+  isProxy,
+  shallowReactive,
+  shallowReadonly,
+  markRaw,
+  toRaw,
+  ReactiveFlags
+} from './reactive'
+ */
+
 import { isObject, toRawType, def, hasOwn, makeMap } from '@vue/shared'
 import {
   mutableHandlers,
@@ -52,6 +69,7 @@ export function reactive(target: object) {
   if (target && (target as Target).__v_isReadonly) {
     return target
   }
+  console.log('target----',target)
   return createReactiveObject(
     target,
     false,
@@ -63,6 +81,9 @@ export function reactive(target: object) {
 // Return a reactive-copy of the original object, where only the root level
 // properties are reactive, and does NOT unwrap refs nor recursively convert
 // returned properties.
+//返回原始对象的反应副本，其中只有根级别
+//属性是反应性的，不会解开引用也不会递归转换
+//返回的属性。
 export function shallowReactive<T extends object>(target: T): T {
   return createReactiveObject(
     target,
@@ -87,6 +108,11 @@ export function readonly<T extends object>(
 // properties are readonly, and does NOT unwrap refs nor recursively convert
 // returned properties.
 // This is used for creating the props proxy object for stateful components.
+
+//返回原始对象的反应副本，其中只有根级别
+//属性是只读的，不会解开引用也不会递归转换
+//返回的属性。
+//这用于为有状态组件创建props代理对象。
 export function shallowReadonly<T extends object>(
   target: T
 ): Readonly<{ [K in keyof T]: UnwrapNestedRefs<T[K]> }> {
@@ -104,10 +130,8 @@ function createReactiveObject(
   baseHandlers: ProxyHandler<any>,
   collectionHandlers: ProxyHandler<any>
 ) {
+  // 如果不是对象，直接返回该值
   if (!isObject(target)) {
-    if (__DEV__) {
-      console.warn(`value cannot be made reactive: ${String(target)}`)
-    }
     return target
   }
   // target is already a Proxy, return it.
@@ -116,6 +140,8 @@ function createReactiveObject(
     return target
   }
   // target already has corresponding Proxy
+  // hasOwn: hasOwnProperty.call(val, key)
+  console.log(hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive))
   if (
     hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive)
   ) {

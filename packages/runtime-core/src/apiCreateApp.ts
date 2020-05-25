@@ -110,11 +110,6 @@ export function createAppAPI<HostElement>(
   hydrate?: RootHydrateFunction
 ): CreateAppFunction<HostElement> {
   return function createApp(rootComponent, rootProps = null) {
-    if (rootProps != null && !isObject(rootProps)) {
-      __DEV__ && warn(`root props passed to app.mount() must be an object.`)
-      rootProps = null
-    }
-
     const context = createAppContext()
     const installedPlugins = new Set()
 
@@ -147,11 +142,6 @@ export function createAppAPI<HostElement>(
         } else if (isFunction(plugin)) {
           installedPlugins.add(plugin)
           plugin(app, ...options)
-        } else if (__DEV__) {
-          warn(
-            `A plugin must either be a function or an object with an "install" ` +
-              `function.`
-          )
         }
         return app
       },
@@ -160,14 +150,7 @@ export function createAppAPI<HostElement>(
         if (__FEATURE_OPTIONS__) {
           if (!context.mixins.includes(mixin)) {
             context.mixins.push(mixin)
-          } else if (__DEV__) {
-            warn(
-              'Mixin has already been applied to target app' +
-                (mixin.name ? `: ${mixin.name}` : '')
-            )
           }
-        } else if (__DEV__) {
-          warn('Mixins are only available in builds supporting Options API')
         }
         return app
       },
@@ -179,23 +162,14 @@ export function createAppAPI<HostElement>(
         if (!component) {
           return context.components[name]
         }
-        if (__DEV__ && context.components[name]) {
-          warn(`Component "${name}" has already been registered in target app.`)
-        }
         context.components[name] = component
         return app
       },
 
       directive(name: string, directive?: Directive) {
-        if (__DEV__) {
-          validateDirectiveName(name)
-        }
-
+    
         if (!directive) {
           return context.directives[name] as any
-        }
-        if (__DEV__ && context.directives[name]) {
-          warn(`Directive "${name}" has already been registered in target app.`)
         }
         context.directives[name] = directive
         return app
@@ -203,18 +177,13 @@ export function createAppAPI<HostElement>(
 
       mount(rootContainer: HostElement, isHydrate?: boolean): any {
         if (!isMounted) {
+          console.log(1111111111)
           const vnode = createVNode(rootComponent as Component, rootProps)
           // store app context on the root VNode.
           // this will be set on the root instance on initial mount.
           vnode.appContext = context
 
-          // HMR root reload
-          if (__DEV__) {
-            context.reload = () => {
-              render(cloneVNode(vnode), rootContainer)
-            }
-          }
-
+         
           if (isHydrate && hydrate) {
             hydrate(vnode as VNode<Node, Element>, rootContainer as any)
           } else {
@@ -223,10 +192,6 @@ export function createAppAPI<HostElement>(
           isMounted = true
           app._container = rootContainer
           return vnode.component!.proxy
-        } else if (__DEV__) {
-          warn(
-            `App has already been mounted. Create a new app instance instead.`
-          )
         }
       },
 
