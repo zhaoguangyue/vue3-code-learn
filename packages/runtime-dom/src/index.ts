@@ -21,7 +21,7 @@ declare module '@vue/reactivity' {
   }
 }
 
-console.log('patchProp----',patchProp)
+console.log('patchProp----', patchProp)
 const rendererOptions = {
   patchProp,
   ...nodeOps
@@ -55,18 +55,15 @@ export const hydrate = ((...args) => {
   ensureHydrationRenderer().hydrate(...args)
 }) as RootHydrateFunction
 
-
-
-
 // 这里是最开始的地方
 export const createApp = ((...args) => {
-
   const app = ensureRenderer().createApp(...args)
 
   const { mount } = app
   app.mount = (containerOrSelector: Element | string): any => {
     const container = normalizeContainer(containerOrSelector)
     if (!container) return
+    //app._component其实就是args
     const component = app._component
     if (!isFunction(component) && !component.render && !component.template) {
       component.template = container.innerHTML
@@ -78,14 +75,9 @@ export const createApp = ((...args) => {
     return proxy
   }
 
+  console.log('app--------------', app)
   return app
-
 }) as CreateAppFunction<Element>
-
-
-
-
-
 
 export const createSSRApp = ((...args) => {
   const app = ensureHydrationRenderer().createApp(...args)
@@ -117,9 +109,6 @@ function injectNativeTagCheck(app: App) {
 function normalizeContainer(container: Element | string): Element | null {
   if (isString(container)) {
     const res = document.querySelector(container)
-    if (__DEV__ && !res) {
-      warn(`Failed to mount app: mount target selector returned null.`)
-    }
     return res
   }
   return container

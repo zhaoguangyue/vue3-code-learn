@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="937e0d1f-dc95-40c4-ba88-5cc06ce0f4f6" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vue3-code-learn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1070175852">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+          <entry key="json" value="4" />
+          <entry key="ts" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="1" />
+          <entry key="TypeScript" value="8" />
+          <entry key="tsconfig" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="159" />
+          <entry key="json" value="1" />
+          <entry key="ts" value="1332" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="159" />
+          <entry key="JSON" value="1" />
+          <entry key="TypeScript" value="1332" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-dom/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+              <folding>
+                <element signature="e#0#193#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="430" column="25" selection-start-line="430" selection-start-column="25" selection-end-line="430" selection-end-column="25" />
+              <folding>
+                <element signature="e#1691#1780#0" />
+                <element signature="e#1843#1877#0" />
+                <element signature="e#2099#3183#0" />
+                <element signature="e#3185#3263#0" />
+                <element signature="e#3472#3496#0" />
+                <element signature="e#3556#3631#0" />
+                <element signature="e#4045#4125#0" />
+                <element signature="e#6624#6682#0" />
+                <element signature="e#6710#6735#0" />
+                <element signature="e#6833#7029#0" />
+                <element signature="e#6844#7027#0" />
+                <element signature="e#7297#8705#0" />
+                <element signature="e#7372#7394#0" />
+                <element signature="e#7400#7675#0" />
+                <element signature="e#7531#7551#0" />
+                <element signature="e#7603#7641#0" />
+                <element signature="e#7647#7671#0" />
+                <element signature="e#7732#7911#0" />
+                <element signature="e#8126#8331#0" />
+                <element signature="e#8154#8269#0" />
+                <element signature="e#8220#8263#0" />
+                <element signature="e#8294#8327#0" />
+                <element signature="e#8354#8452#0" />
+                <element signature="e#8411#8448#0" />
+                <element signature="e#8474#8501#0" />
+                <element signature="e#8528#8612#0" />
+                <element signature="e#8631#8703#0" />
+                <element signature="e#8707#9200#0" />
+                <element signature="e#9442#9498#0" />
+                <element signature="e#9672#9738#0" />
+                <element signature="e#57734#57837#0" />
+                <element signature="e#57804#57834#0" />
+                <element signature="e#57949#58694#0" />
+                <element signature="e#58069#58581#0" />
+                <element signature="e#58115#58577#0" />
+                <element signature="e#58178#58244#0" />
+                <element signature="e#58305#58444#0" />
+                <element signature="e#58372#58403#0" />
+                <element signature="e#58409#58436#0" />
+                <element signature="e#58478#58571#0" />
+                <element signature="e#58499#58541#0" />
+                <element signature="e#58640#58676#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/vnode.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-807">
+              <caret line="397" column="5" selection-start-line="397" selection-start-column="5" selection-end-line="397" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="n#!!block;n#queueJob#0" />
+                <element signature="n#!!block;n#invalidateJob#0" />
+                <element signature="n#!!block;n#queuePostFlushCb#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/errorHandling.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="68" column="35" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/vue/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>invalidateJob</find>
+      <find>flushJobs</find>
+      <find>unmount</find>
+      <find>ensureRenderer().render</find>
+      <find>ensureRenderer()</find>
+      <find>createApp</find>
+      <find>rootComponent</find>
+      <find>app</find>
+      <find>ensureRenderer</find>
+      <find>__FEATURE_OPTIONS__</find>
+      <find>context</find>
+      <find>createRenderer</find>
+      <find>createAppContext</find>
+      <find>isMounted</find>
+      <find>rootProps</find>
+      <find>vnode----</find>
+      <find>createAppAPI</find>
+      <find>normalizeContainer</find>
+      <find>_createVNode</find>
+      <find>queueJob</find>
+      <find>flushPostFlushCbs</find>
+      <find>isHydrate</find>
+      <find>render</find>
+      <find>rootContainer</find>
+      <find>callWithErrorHandling</find>
+      <find>ErrorCodes</find>
+      <find>checkRecursiveUpdates</find>
+      <find>RECURSION_LIMIT</find>
+      <find>isObject</find>
+      <find>isObjec</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/packages/runtime-core</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/index.html" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/compiler-core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/compiler-sfc/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/vue/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-core/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-dom/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-sfc/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-ssr/package.json" />
+      <path value="$PROJECT_DIR$/packages/reactivity/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-core/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-dom/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-test/package.json" />
+      <path value="$PROJECT_DIR$/packages/server-renderer/package.json" />
+      <path value="$PROJECT_DIR$/packages/shared/package.json" />
+      <path value="$PROJECT_DIR$/packages/size-check/package.json" />
+      <path value="$PROJECT_DIR$/packages/template-explorer/package.json" />
+      <path value="$PROJECT_DIR$/packages/vue/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="309" />
+    <option name="y" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-dom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-dom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="937e0d1f-dc95-40c4-ba88-5cc06ce0f4f6" name="默认更改列表" comment="" />
+      <created>1590632234691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590632234691</updated>
+      <workItem from="1590632239790" duration="2841000" />
+      <workItem from="1590649972892" duration="10926000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13767000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="309" y="1080" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29467833" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>1847</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/packages/runtime-dom/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/errorHandling.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/global.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/__tests__/index.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-dom/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#0#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/vnode.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="397" column="5" selection-start-line="397" selection-start-column="5" selection-end-line="397" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="430" column="25" selection-start-line="430" selection-start-column="25" selection-end-line="430" selection-end-column="25" />
+          <folding>
+            <element signature="e#1691#1780#0" />
+            <element signature="e#1843#1877#0" />
+            <element signature="e#2099#3183#0" />
+            <element signature="e#3185#3263#0" />
+            <element signature="e#3472#3496#0" />
+            <element signature="e#3556#3631#0" />
+            <element signature="e#4045#4125#0" />
+            <element signature="e#6624#6682#0" />
+            <element signature="e#6710#6735#0" />
+            <element signature="e#6833#7029#0" />
+            <element signature="e#6844#7027#0" />
+            <element signature="e#7297#8705#0" />
+            <element signature="e#7372#7394#0" />
+            <element signature="e#7400#7675#0" />
+            <element signature="e#7531#7551#0" />
+            <element signature="e#7603#7641#0" />
+            <element signature="e#7647#7671#0" />
+            <element signature="e#7732#7911#0" />
+            <element signature="e#8126#8331#0" />
+            <element signature="e#8154#8269#0" />
+            <element signature="e#8220#8263#0" />
+            <element signature="e#8294#8327#0" />
+            <element signature="e#8354#8452#0" />
+            <element signature="e#8411#8448#0" />
+            <element signature="e#8474#8501#0" />
+            <element signature="e#8528#8612#0" />
+            <element signature="e#8631#8703#0" />
+            <element signature="e#8707#9200#0" />
+            <element signature="e#9442#9498#0" />
+            <element signature="e#9672#9738#0" />
+            <element signature="e#57734#57837#0" />
+            <element signature="e#57804#57834#0" />
+            <element signature="e#57949#58694#0" />
+            <element signature="e#58069#58581#0" />
+            <element signature="e#58115#58577#0" />
+            <element signature="e#58178#58244#0" />
+            <element signature="e#58305#58444#0" />
+            <element signature="e#58372#58403#0" />
+            <element signature="e#58409#58436#0" />
+            <element signature="e#58478#58571#0" />
+            <element signature="e#58499#58541#0" />
+            <element signature="e#58640#58676#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="n#!!block;n#queueJob#0" />
+            <element signature="n#!!block;n#invalidateJob#0" />
+            <element signature="n#!!block;n#queuePostFlushCb#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

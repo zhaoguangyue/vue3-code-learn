@@ -350,7 +350,6 @@ export function createRenderer<
   HostNode = RendererNode,
   HostElement = RendererElement
 >(options: RendererOptions<HostNode, HostElement>) {
-  console.log('options', options)
   return baseCreateRenderer<HostNode, HostElement>(options)
 }
 
@@ -380,7 +379,6 @@ function baseCreateRenderer(
   options: RendererOptions,
   createHydrationFns?: typeof createHydrationFunctions
 ): any {
-  console.log()
   const {
     insert: hostInsert,
     remove: hostRemove,
@@ -2074,6 +2072,7 @@ function baseCreateRenderer(
     }
   }
 
+  //接受一个虚拟节点，和容器作为参数
   const render: RootRenderFunction = (vnode, container) => {
     if (vnode == null) {
       if (container._vnode) {
@@ -2082,6 +2081,7 @@ function baseCreateRenderer(
     } else {
       patch(container._vnode || null, vnode, container)
     }
+    //将回调队列的所有回调方法全部执行
     flushPostFlushCbs()
     container._vnode = vnode
   }

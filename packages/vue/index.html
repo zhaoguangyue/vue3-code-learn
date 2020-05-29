@@ -12,17 +12,27 @@
         console.log(Vue)
         var {createApp, reactive } = Vue
         const app = {
-            template: `<div>{{state.name}}</div>`,
+            template: `
+                <div>
+                       {{state.count}}
+                       <button @click="handlerClick">点击</button>
+                </div>`,
             setup() {
                 const state = reactive({
-                    name:12345
+                  count:12345
                 })
+                const handlerClick = ()=>{
+                  state.count++
+                }
                 return {
-                    state
+                    state,
+                    handlerClick
                 }
             }
         }
-        createApp(app).mount('#app')
+        var proxy = createApp(app).mount('#app')
+        console.log('proxy----------',proxy)
+        console.log(proxy.state)
     </script>
 </body>
 </html>

@@ -1,17 +1,12 @@
-import {
-  Component,
-  Data,
-  validateComponentName,
-  PublicAPIComponent
-} from './component'
+import { Component, Data, PublicAPIComponent } from './component'
 import { ComponentOptions } from './componentOptions'
 import { ComponentPublicInstance } from './componentProxy'
-import { Directive, validateDirectiveName } from './directives'
+import { Directive } from './directives'
 import { RootRenderFunction } from './renderer'
 import { InjectionKey } from './apiInject'
-import { isFunction, NO, isObject } from '@vue/shared'
+import { isFunction, NO } from '@vue/shared'
 import { warn } from './warning'
-import { createVNode, cloneVNode, VNode } from './vnode'
+import { createVNode, VNode } from './vnode'
 import { RootHydrateFunction } from './hydration'
 
 export interface App<HostElement = any> {
@@ -109,6 +104,18 @@ export function createAppAPI<HostElement>(
   render: RootRenderFunction,
   hydrate?: RootHydrateFunction
 ): CreateAppFunction<HostElement> {
+  /**
+   * rootComponent
+   * 其实就是
+   *  const App = {
+        template: `{{ count }}`,
+        data() {
+          return {
+            count: 0
+          }
+        }
+      }
+   */
   return function createApp(rootComponent, rootProps = null) {
     const context = createAppContext()
     const installedPlugins = new Set()
@@ -123,14 +130,6 @@ export function createAppAPI<HostElement>(
 
       get config() {
         return context.config
-      },
-
-      set config(v) {
-        if (__DEV__) {
-          warn(
-            `app.config cannot be replaced. Modify individual options instead.`
-          )
-        }
       },
 
       use(plugin: Plugin, ...options: any[]) {
@@ -156,9 +155,6 @@ export function createAppAPI<HostElement>(
       },
 
       component(name: string, component?: PublicAPIComponent): any {
-        if (__DEV__) {
-          validateComponentName(name, context.config)
-        }
         if (!component) {
           return context.components[name]
         }
@@ -167,7 +163,6 @@ export function createAppAPI<HostElement>(
       },
 
       directive(name: string, directive?: Directive) {
-    
         if (!directive) {
           return context.directives[name] as any
         }
@@ -177,13 +172,11 @@ export function createAppAPI<HostElement>(
 
       mount(rootContainer: HostElement, isHydrate?: boolean): any {
         if (!isMounted) {
-          console.log(1111111111)
           const vnode = createVNode(rootComponent as Component, rootProps)
           // store app context on the root VNode.
           // this will be set on the root instance on initial mount.
           vnode.appContext = context
 
-         
           if (isHydrate && hydrate) {
             hydrate(vnode as VNode<Node, Element>, rootContainer as any)
           } else {
