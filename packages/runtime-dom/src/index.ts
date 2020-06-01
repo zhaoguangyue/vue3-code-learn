@@ -1,7 +1,6 @@
 import {
   createRenderer,
   createHydrationRenderer,
-  warn,
   RootRenderFunction,
   CreateAppFunction,
   Renderer,
@@ -21,7 +20,6 @@ declare module '@vue/reactivity' {
   }
 }
 
-console.log('patchProp----', patchProp)
 const rendererOptions = {
   patchProp,
   ...nodeOps

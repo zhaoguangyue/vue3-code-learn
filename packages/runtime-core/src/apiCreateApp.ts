@@ -191,18 +191,10 @@ export function createAppAPI<HostElement>(
       unmount() {
         if (isMounted) {
           render(null, app._container)
-        } else if (__DEV__) {
-          warn(`Cannot unmount an app that is not mounted.`)
         }
       },
 
       provide(key, value) {
-        if (__DEV__ && key in context.provides) {
-          warn(
-            `App already provides property with key "${String(key)}". ` +
-              `It will be overwritten with the new value.`
-          )
-        }
         // TypeScript doesn't allow symbols as index type
         // https://github.com/Microsoft/TypeScript/issues/24587
         context.provides[key as string] = value

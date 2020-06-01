@@ -233,14 +233,6 @@ export function isVNode(value: any): value is VNode {
 }
 
 export function isSameVNodeType(n1: VNode, n2: VNode): boolean {
-  if (
-    __DEV__ &&
-    n2.shapeFlag & ShapeFlags.COMPONENT &&
-    (n2.type as Component).__hmrUpdated
-  ) {
-    // HMR only: if the component has been hot-updated, force a reload.
-    return false
-  }
   return n1.type === n2.type && n1.key === n2.key
 }
 
@@ -283,6 +275,7 @@ const normalizeRef = ({ ref }: VNodeProps): VNode['ref'] =>
       : [currentRenderingInstance!, ref]
     : null) as any
 
+//创建虚拟dom
 export const createVNode = (__DEV__
   ? createVNodeWithArgsTransform
   : _createVNode) as typeof _createVNode
@@ -295,10 +288,16 @@ function _createVNode(
   dynamicProps: string[] | null = null,
   isBlockNode = false
 ): VNode {
+  // console.log('----------------开始虚拟dom------------------')
+  // console.log('type-----', type);
+  // console.log('props-----', props);
+  // console.log('children-----', children);
+  // console.log('patchFlag-----', patchFlag);
+  // console.log('dynamicProps-----', dynamicProps);
+  // console.log('dynamicProps-----', dynamicProps);
+  // console.log('isBlockNode-----', isBlockNode);
+  // console.log('--------虚拟dom-------')
   if (!type || type === NULL_DYNAMIC_COMPONENT) {
-    if (__DEV__ && !type) {
-      warn(`Invalid vnode type when creating vnode: ${type}.`)
-    }
     type = Comment
   }
 
@@ -339,7 +338,6 @@ function _createVNode(
           : isFunction(type)
             ? ShapeFlags.FUNCTIONAL_COMPONENT
             : 0
-
   if (__DEV__ && shapeFlag & ShapeFlags.STATEFUL_COMPONENT && isProxy(type)) {
     type = toRaw(type)
     warn(
@@ -398,8 +396,7 @@ function _createVNode(
   ) {
     currentBlock.push(vnode)
   }
-
-  console.log('vnode-----',vnode)
+  console.log('vnode-----', vnode)
   return vnode
 }
 
@@ -488,6 +485,7 @@ export function createCommentVNode(
     : createVNode(Comment, null, text)
 }
 
+//标准vNode
 export function normalizeVNode(child: VNodeChild): VNode {
   if (child == null || typeof child === 'boolean') {
     // empty placeholder

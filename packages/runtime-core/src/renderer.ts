@@ -395,12 +395,10 @@ function baseCreateRenderer(
     insertStaticContent: hostInsertStaticContent
   } = options
 
-  // Note: functions inside this closure should use `const xxx = () => {}`
-  // style in order to prevent being inlined by minifiers.
   const patch: PatchFn = (
-    n1,
-    n2,
-    container,
+    n1, //null
+    n2, //app虚拟dom
+    container, //#app容器
     anchor = null,
     parentComponent = null,
     parentSuspense = null,
@@ -408,18 +406,25 @@ function baseCreateRenderer(
     optimized = false
   ) => {
     // patching & not same type, unmount old tree
+    //如果n1和n2有相同type和key,卸载旧tree
     if (n1 && !isSameVNodeType(n1, n2)) {
       anchor = getNextHostNode(n1)
       unmount(n1, parentComponent, parentSuspense, true)
       n1 = null
     }
 
+    // console.log('n2---------', n2)
     if (n2.patchFlag === PatchFlags.BAIL) {
       optimized = false
       n2.dynamicChildren = null
     }
 
     const { type, ref, shapeFlag } = n2
+    console.log('-----------type---------', type)
+    console.log('-----------type---------', type as typeof TeleportImpl)
+    // export const Text = Symbol(__DEV__ ? 'Text' : undefined)
+    // export const Comment = Symbol(__DEV__ ? 'Comment' : undefined)
+    // export const Static = Symbol(__DEV__ ? 'Static' : undefined)
     switch (type) {
       case Text:
         processText(n1, n2, container, anchor)
@@ -430,8 +435,6 @@ function baseCreateRenderer(
       case Static:
         if (n1 == null) {
           mountStaticNode(n2, container, anchor, isSVG)
-        } else if (__DEV__) {
-          patchStaticNode(n1, n2, container, isSVG)
         }
         break
       case Fragment:
@@ -493,8 +496,6 @@ function baseCreateRenderer(
             optimized,
             internals
           )
-        } else if (__DEV__) {
-          warn('Invalid VNode type:', type, `(${typeof type})`)
         }
     }
 

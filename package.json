@@ -23,8 +23,17 @@
     "directory": "test-dts"
   },
   "gitHooks": {
-    "pre-commit": "ls-lint && lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js"
+    "pre-commit": "ls-lint && lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "git add"
+    ]
   },
   "engines": {
     "node": ">=10.0.0"

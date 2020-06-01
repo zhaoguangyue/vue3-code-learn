@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="../dist/vue.global.js"></script>
+    <script type="module">
+        const {createApp, reactive, createVNode, createBlock, createCommentVNode } = Vue
+        console.log(Vue)
+        import {func} from "./vue/com1.js"
+        // func()
+        // console.log(createBlock('<div>123</div>'))
+        // var aaaa = createCommentVNode('123')
+
+        // const aaaa = createApp({
+        //   template: "<div>hello world</div>",
+        //   setup() {
+        //     const state = reactive({
+        //       count:12345
+        //     })
+        //     return {
+        //       state,
+        //     }
+        //   }
+        // })
+        const app = {
+            template: `
+                <template>
+                       <div>{{state.count}}</div>
+                       阿斯达打撒多
+                       <button @click="handlerClick">点击</button>
+                       123123
+                       <template>
+                            <div>11221</div>
+                            <div>11221</div>
+                       </template>
+                </template>`,
+            setup() {
+                const state = reactive({
+                  count:12345
+                })
+                const handlerClick = ()=>{
+                  state.count++
+                }
+                return {
+                    state,
+                    handlerClick
+                }
+            }
+        }
+        var proxy = createApp(app).mount('#app')
+    </script>
+</body>
+</html>
