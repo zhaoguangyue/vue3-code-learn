@@ -420,8 +420,8 @@ function baseCreateRenderer(
     }
 
     const { type, ref, shapeFlag } = n2
-    console.log('-----------type---------', type)
-    console.log('-----------type---------', type as typeof TeleportImpl)
+    // console.log('-----------n1---------', n1)
+    // console.log('-----------n2---------', n2)
     // export const Text = Symbol(__DEV__ ? 'Text' : undefined)
     // export const Comment = Symbol(__DEV__ ? 'Comment' : undefined)
     // export const Static = Symbol(__DEV__ ? 'Static' : undefined)
@@ -552,33 +552,6 @@ function baseCreateRenderer(
       anchor,
       isSVG
     )
-  }
-
-  /**
-   * Dev / HMR only
-   */
-  const patchStaticNode = (
-    n1: VNode,
-    n2: VNode,
-    container: RendererElement,
-    isSVG: boolean
-  ) => {
-    // static nodes are only patched during dev for HMR
-    if (n2.children !== n1.children) {
-      const anchor = hostNextSibling(n1.anchor!)
-      // remove existing
-      removeStaticNode(n1)
-      // insert new
-      ;[n2.el, n2.anchor] = hostInsertStaticContent!(
-        n2.children as string,
-        container,
-        anchor,
-        isSVG
-      )
-    } else {
-      n2.el = n1.el
-      n2.anchor = n1.anchor
-    }
   }
 
   /**
@@ -1299,22 +1272,15 @@ function baseCreateRenderer(
         // OR parent calling processComponent (next: VNode)
         let { next, bu, u, parent, vnode } = instance
         let vnodeHook: VNodeHook | null | undefined
-        if (__DEV__) {
-          pushWarningContext(next || instance.vnode)
-        }
 
         if (next) {
           updateComponentPreRender(instance, next, optimized)
         } else {
           next = vnode
         }
-        if (__DEV__) {
-          startMeasure(instance, `render`)
-        }
+
         const nextTree = renderComponentRoot(instance)
-        if (__DEV__) {
-          endMeasure(instance, `render`)
-        }
+
         const prevTree = instance.subTree
         instance.subTree = nextTree
         next.el = vnode.el
@@ -1331,9 +1297,7 @@ function baseCreateRenderer(
         if (instance.refs !== EMPTY_OBJ) {
           instance.refs = {}
         }
-        if (__DEV__) {
-          startMeasure(instance, `patch`)
-        }
+
         patch(
           prevTree,
           nextTree,
@@ -1345,9 +1309,7 @@ function baseCreateRenderer(
           parentSuspense,
           isSVG
         )
-        if (__DEV__) {
-          endMeasure(instance, `patch`)
-        }
+
         next.el = nextTree.el
         if (next === null) {
           // self-triggered update. In case of HOC, update parent component
@@ -1364,9 +1326,6 @@ function baseCreateRenderer(
           queuePostRenderEffect(() => {
             invokeVNodeHook(vnodeHook!, parent, next!, vnode)
           }, parentSuspense)
-        }
-        if (__DEV__) {
-          popWarningContext()
         }
       }
     }, __DEV__ ? createDevEffectOptions(instance) : prodEffectOptions)

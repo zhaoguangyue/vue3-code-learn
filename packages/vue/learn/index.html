@@ -9,50 +9,51 @@
     <div id="app"></div>
     <script src="../dist/vue.global.js"></script>
     <script type="module">
-        const {createApp, reactive, createVNode, createBlock, createCommentVNode } = Vue
+        const {createApp, reactive, readonly, computed, isProxy, isReactive, isReadonly, markRaw, toRaw} = Vue
         console.log(Vue)
-        import {func} from "./vue/com1.js"
-        // func()
-        // console.log(createBlock('<div>123</div>'))
-        // var aaaa = createCommentVNode('123')
-
-        // const aaaa = createApp({
-        //   template: "<div>hello world</div>",
-        //   setup() {
-        //     const state = reactive({
-        //       count:12345
-        //     })
-        //     return {
-        //       state,
-        //     }
-        //   }
-        // })
         const app = {
             template: `
-                <template>
-                       <div>{{state.count}}</div>
-                       阿斯达打撒多
+                <div>
+                       <!--<div>{{state.animal.dog.prop.name}}</div>-->
+                       <div>{{a}}</div>
+                       <!--<div>{{arr[0]}}</div>-->
+                       <div>{{data.name}}</div>
+                       <div>{{data.name+2}}</div>
+                       <div>{{data.count}}</div>
                        <button @click="handlerClick">点击</button>
-                       123123
-                       <template>
-                            <div>11221</div>
-                            <div>11221</div>
-                       </template>
-                </template>`,
+                </div>`,
             setup() {
-                const state = reactive({
-                  count:12345
+                const state = readonly({
+                  animal: {
+                    dog: {
+                      prop: {
+                        name: 1
+                      }
+                    }
+                  },
                 })
+                const data = reactive({
+                  count: 12345,
+                  name: 'abc',
+                  visible: true
+                })
+                let a = computed(()=>{
+                  let caa = data.count*2+data.name
+                  return caa
+                })
+
                 const handlerClick = ()=>{
-                  state.count++
+                  data.count++
                 }
                 return {
+                    a,
                     state,
+                    data,
                     handlerClick
                 }
             }
         }
-        var proxy = createApp(app).mount('#app')
+        createApp(app).mount('#app')
     </script>
 </body>
 </html>

@@ -16,16 +16,16 @@ export {
 
 // 导出响应式相关的
 export {
-  reactive,
-  readonly,
+  reactive, //创建响应对象
+  readonly, //创建只读的响应对象
   isReactive,
   isReadonly,
   isProxy,
   shallowReactive,
   shallowReadonly,
-  markRaw,
-  toRaw,
-  ReactiveFlags
+  markRaw, //设置值的__v_skip为true
+  toRaw, //返回值的__v_raw
+  ReactiveFlags //返回一些枚举值
 } from './reactive'
 
 // 导出计算属性相关的

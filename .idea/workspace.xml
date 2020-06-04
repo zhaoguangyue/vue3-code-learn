@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="937e0d1f-dc95-40c4-ba88-5cc06ce0f4f6" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/vue/learn/vue/com1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/shared/src/patchFlags.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/shared/src/patchFlags.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue/learn/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vue/learn/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue/learn/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,31 +24,32 @@
     <session id="-1070175852">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="14" />
-          <entry key="js" value="8" />
+          <entry key="html" value="15" />
+          <entry key="js" value="13" />
           <entry key="json" value="7" />
           <entry key="lock" value="1" />
           <entry key="prettierrc" value="1" />
-          <entry key="ts" value="22" />
+          <entry key="ts" value="49" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="14" />
+          <entry key="HTML" value="15" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="8" />
+          <entry key="JavaScript" value="13" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="22" />
+          <entry key="TypeScript" value="49" />
           <entry key="YAML" value="1" />
           <entry key="tsconfig" value="1" />
           <entry key="yarn.lock" value="1" />
@@ -58,23 +57,23 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="609" />
+          <entry key="html" value="1415" />
           <entry key="js" value="86" />
           <entry key="json" value="2" />
-          <entry key="ts" value="1850" />
+          <entry key="ts" value="6053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="609" />
+          <entry key="HTML" value="1415" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="86" />
-          <entry key="TypeScript" value="1850" />
+          <entry key="TypeScript" value="6053" />
         </counts>
       </usages-collector>
     </session>
@@ -82,22 +81,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/vue/src/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/vue/learn/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="935">
+              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="540" column="55" selection-start-line="540" selection-start-column="55" selection-end-line="540" selection-end-column="55" />
+            <state relative-caret-position="313">
+              <caret line="1055" column="13" lean-forward="true" selection-start-line="1055" selection-start-column="13" selection-end-line="1055" selection-end-column="13" />
               <folding>
                 <element signature="e#0#212#0" expanded="true" />
                 <element signature="e#1691#1780#0" />
@@ -137,47 +124,106 @@
                 <element signature="e#8528#8612#0" />
                 <element signature="e#8631#8703#0" />
                 <element signature="e#8707#9200#0" />
-                <element signature="e#14727#15157#0" />
-                <element signature="e#15307#15541#0" />
-                <element signature="e#15620#15805#0" />
+                <element signature="e#32320#34350#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/vnode.ts">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/reactive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!block;n#Target#0" />
+                <element signature="n#!!block;n#reactive#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/ref.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/operations.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-947">
+              <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!block;n#deleteProperty#0" />
+                <element signature="n#!!block;n#has#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/effect.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="300" column="43" lean-forward="true" selection-start-line="300" selection-start-column="43" selection-end-line="300" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#110#177#0" />
+                <element signature="n#!!block;n#ReactiveEffect#0" />
+                <element signature="n#!!block;n#ReactiveEffectOptions#0" />
+                <element signature="n#!!block;n#DebuggerEventExtraInfo#0" />
+                <element signature="n#!!block;n#stop#0" />
+                <element signature="n#!!block;n#cleanup#0" />
+                <element signature="n#!!block;n#pauseTracking#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/computed.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="60" column="53" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/shared/src/shapeFlags.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/helpers/resolveAssets.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="35" />
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="13" />
               <folding>
-                <element signature="e#0#66#0" expanded="true" />
+                <element signature="e#0#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/vue/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/collectionHandlers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -191,39 +237,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>queuePostRenderEffect</find>
-      <find>patch</find>
-      <find>RECURSION_LIMIT</find>
-      <find>container</find>
-      <find>target----</find>
-      <find>n2---------</find>
-      <find>patchProp----</find>
+      <find>resetTracking</find>
+      <find>activeEffect =</find>
+      <find>activeEffect =</find>
       <find>console</find>
-      <find>console.log(hasOwn</find>
+      <find>createReactiveEffect</find>
+      <find>isObject(res)</find>
+      <find>new Proxy</find>
+      <find>tract</find>
+      <find>reactive</find>
+      <find>targetIsArray</find>
+      <find>shallow</find>
+      <find>createGetter</find>
+      <find>trac</find>
+      <find>shallowGet</find>
+      <find>__v_isRef</find>
+      <find>console.log(target);</find>
+      <find>start</find>
+      <find>activeEffect</find>
+      <find>effect</find>
+      <find>track</find>
+      <find>effect(</find>
+      <find>arr</find>
       <find>createReactiveObject</find>
-      <find>target, isReadonly</find>
-      <find>rootComponent</find>
-      <find>vnode-----</find>
-      <find>_createVNode</find>
-      <find>createVNodeWithArgsTransform</find>
-      <find>createVNode</find>
-      <find>vnodeArgsTransformer</find>
-      <find>NULL_DYNAMIC_COMPONENT</find>
-      <find>Comment</find>
-      <find>__v_isVNode</find>
-      <find>getNextHostNode</find>
-      <find>isSameVNodeType</find>
-      <find>shapeFlag</find>
-      <find>hostNextSibling</find>
-      <find>ShapeFlags</find>
-      <find>isSuspense</find>
-      <find>BAIL</find>
-      <find>Text</find>
-      <find>processText</find>
-      <find>hostInsert</find>
+      <find>toRaw</find>
+      <find>deps</find>
+      <find>trigger</find>
+      <find>ITERATE_KEY</find>
+      <find>computedRunners</find>
+      <find>MAP_KEY_ITERATE_KEY</find>
+      <find>TriggerOpTypes.CLEAR</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/packages/runtime-core</dir>
+      <dir>$PROJECT_DIR$/packages/vue</dir>
+      <dir>$PROJECT_DIR$/packages/reactivity/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -236,14 +284,19 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" />
         <option value="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" />
-        <option value="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" />
         <option value="$PROJECT_DIR$/packages/vue/index.html" />
         <option value="$PROJECT_DIR$/packages/vue/learn/vue/com1.js" />
         <option value="$PROJECT_DIR$/packages/shared/src/patchFlags.ts" />
-        <option value="$PROJECT_DIR$/packages/vue/learn/index.html" />
-        <option value="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" />
         <option value="$PROJECT_DIR$/packages/shared/src/shapeFlags.ts" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/index.ts" />
+        <option value="$PROJECT_DIR$/packages/shared/src/makeMap.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/dist/vue.global.js" />
         <option value="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/learn/index.html" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/effect.ts" />
       </list>
     </option>
   </component>
@@ -307,14 +360,33 @@
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime-core" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler-sfc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler-sfc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="runtime-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
@@ -333,7 +405,20 @@
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="template-explorer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
@@ -349,6 +434,13 @@
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
@@ -400,17 +492,18 @@
       <updated>1590632234691</updated>
       <workItem from="1590632239790" duration="2841000" />
       <workItem from="1590649972892" duration="34201000" />
+      <workItem from="1591168211166" duration="14933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37042000" />
+    <option name="totallyTimeSpent" value="77995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="309" y="1080" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29467833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19301033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -422,11 +515,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32913166" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32913166" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -434,6 +527,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -443,93 +546,42 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
-          <line>1858</line>
-          <properties lambdaOrdinal="-1" />
+          <line>1817</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
-          <line>2089</line>
-          <properties lambdaOrdinal="-1" />
+          <line>2048</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
-          <line>2100</line>
-          <properties lambdaOrdinal="-1" />
+          <line>2059</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
           <line>403</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
           <line>511</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts</url>
+          <line>114</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/runtime-dom/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/errorHandling.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/global.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/__tests__/index.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.prettierrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/rollup.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="253" column="19" selection-start-line="253" selection-start-column="19" selection-end-line="253" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,20 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1659" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!block;n#queueJob#0" />
-            <element signature="n#!!block;n#invalidateJob#0" />
-            <element signature="n#!!block;n#queuePostFlushCb#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,20 +613,6 @@
           <folding>
             <element signature="e#0#193#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/dist/vue.global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="4671" column="43" lean-forward="true" selection-start-line="4671" selection-start-column="43" selection-end-line="4671" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/reactive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="143" column="6" lean-forward="true" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -614,15 +642,6 @@
     <entry file="file://$PROJECT_DIR$/packages/vue/examples/transition/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/src/runtime.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -633,33 +652,11 @@
     <entry file="file://$PROJECT_DIR$/packages/vue/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-875">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/utils.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/vue/api-extractor.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/src/devCheck.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/vue/examples/transition/modal.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -727,17 +724,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/compiler-dom/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/compiler-sfc/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/apiAsyncComponent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="173" column="20" lean-forward="true" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/vnode.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="60" column="53" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+        <state relative-caret-position="313">
+          <caret line="403" column="21" lean-forward="true" selection-start-line="403" selection-start-column="21" selection-end-line="403" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/makeMap.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="1380" column="4" selection-start-line="1380" selection-start-column="4" selection-end-line="1380" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/runtime.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/dist/vue.global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="5163" column="25" selection-start-line="5163" selection-start-column="25" selection-end-line="5163" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/devCheck.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/dist/runtime-core.esm-bundler.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/__tests__/computed.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/collectionHandlers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/learn/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="540" column="55" selection-start-line="540" selection-start-column="55" selection-end-line="540" selection-end-column="55" />
+        <state relative-caret-position="313">
+          <caret line="1055" column="13" lean-forward="true" selection-start-line="1055" selection-start-column="13" selection-end-line="1055" selection-end-column="13" />
           <folding>
             <element signature="e#0#212#0" expanded="true" />
             <element signature="e#1691#1780#0" />
@@ -768,17 +877,74 @@
             <element signature="e#8528#8612#0" />
             <element signature="e#8631#8703#0" />
             <element signature="e#8707#9200#0" />
-            <element signature="e#14727#15157#0" />
-            <element signature="e#15307#15541#0" />
-            <element signature="e#15620#15805#0" />
+            <element signature="e#32320#34350#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/vue/learn/index.html">
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/reactive.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!block;n#Target#0" />
+            <element signature="n#!!block;n#reactive#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/operations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/ref.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/computed.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!block;n#deleteProperty#0" />
+            <element signature="n#!!block;n#has#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/effect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="300" column="43" lean-forward="true" selection-start-line="300" selection-start-column="43" selection-end-line="300" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#110#177#0" />
+            <element signature="n#!!block;n#ReactiveEffect#0" />
+            <element signature="n#!!block;n#ReactiveEffectOptions#0" />
+            <element signature="n#!!block;n#DebuggerEventExtraInfo#0" />
+            <element signature="n#!!block;n#stop#0" />
+            <element signature="n#!!block;n#cleanup#0" />
+            <element signature="n#!!block;n#pauseTracking#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,14 +1,8 @@
-import { reactive, readonly, toRaw, ReactiveFlags } from './reactive'
+import { reactive, readonly, toRaw } from './reactive'
 import { TrackOpTypes, TriggerOpTypes } from './operations'
 import { track, trigger, ITERATE_KEY } from './effect'
-import { isObject, hasOwn, isSymbol, hasChanged, isArray } from '@vue/shared'
+import { isObject, hasOwn, hasChanged, isArray } from '@vue/shared'
 import { isRef } from './ref'
-
-const builtInSymbols = new Set(
-  Object.getOwnPropertyNames(Symbol)
-    .map(key => (Symbol as any)[key])
-    .filter(isSymbol)
-)
 
 const get = /*#__PURE__*/ createGetter()
 const shallowGet = /*#__PURE__*/ createGetter(false, true)
@@ -33,46 +27,63 @@ const arrayInstrumentations: Record<string, Function> = {}
   }
 })
 
+//创建getter, //只要不是只读就加入到track，收集依赖，进行监听响应
 function createGetter(isReadonly = false, shallow = false) {
   return function get(target: object, key: string | symbol, receiver: object) {
-    if (key === ReactiveFlags.isReactive) {
+    // 获取值的__v_isReactive， __v_isReadonly， __v_raw时的返回值
+    if (key === '__v_isReactive') {
       return !isReadonly
-    } else if (key === ReactiveFlags.isReadonly) {
+    } else if (key === '__v_isReadonly') {
       return isReadonly
-    } else if (key === ReactiveFlags.raw) {
+    } else if (key === '__v_raw') {
       return target
     }
-
+    console.log(
+      '%c -----------createGetter---------',
+      'color: #09e;font-size:16px'
+    )
+    // console.log(target)
+    // console.log('key----',key)
+    //响应值是否为数组
     const targetIsArray = isArray(target)
+    //如果是数组，返回 target[key] key是下标
     if (targetIsArray && hasOwn(arrayInstrumentations, key)) {
       return Reflect.get(arrayInstrumentations, key, receiver)
     }
+    /***************target是对象***************/
+    //拿到值
     const res = Reflect.get(target, key, receiver)
 
-    if (isSymbol(key) && builtInSymbols.has(key) || key === '__proto__') {
-      return res
-    }
-
+    //当 shallowGet  shallowReadonlyGet 时，需要走下面
     if (shallow) {
+      //如果是shallowGet，则track
       !isReadonly && track(target, TrackOpTypes.GET, key)
       return res
     }
-
+    // 计算属性的会设置__v_isRef为true，所以计算属性会走这里
     if (isRef(res)) {
       if (targetIsArray) {
         !isReadonly && track(target, TrackOpTypes.GET, key)
         return res
       } else {
-        // ref unwrapping, only for Objects, not for Arrays.
         return res.value
       }
     }
 
     !isReadonly && track(target, TrackOpTypes.GET, key)
+
     return isObject(res)
       ? isReadonly
         ? // need to lazy access readonly and reactive here to avoid
           // circular dependency
+          // 需要在这里延迟 只读访问和响应访问 以避免循环依赖
+          //也就是说
+          // let animal = { dog: {prop: {name: 1}}}
+          // 当template中是这样的引用时，animal.dog.prop.name其实是这样的
+          // return reactive({dog: {prop: {name: 1}}})
+          // return reactive({prop: {name:1}})
+          // return reactive({name: 1})
+          // return 1
           readonly(res)
         : reactive(res)
       : res
@@ -135,6 +146,7 @@ function ownKeys(target: object): (string | number | symbol)[] {
   return Reflect.ownKeys(target)
 }
 
+//响应，
 export const mutableHandlers: ProxyHandler<object> = {
   get,
   set,
@@ -142,31 +154,20 @@ export const mutableHandlers: ProxyHandler<object> = {
   has,
   ownKeys
 }
-
+//只读
 export const readonlyHandlers: ProxyHandler<object> = {
   get: readonlyGet,
   has,
   ownKeys,
   set(target, key) {
-    if (__DEV__) {
-      console.warn(
-        `Set operation on key "${String(key)}" failed: target is readonly.`,
-        target
-      )
-    }
     return true
   },
   deleteProperty(target, key) {
-    if (__DEV__) {
-      console.warn(
-        `Delete operation on key "${String(key)}" failed: target is readonly.`,
-        target
-      )
-    }
     return true
   }
 }
 
+// 浅响应，重写了get和set方法
 export const shallowReactiveHandlers: ProxyHandler<object> = {
   ...mutableHandlers,
   get: shallowGet,
@@ -176,6 +177,9 @@ export const shallowReactiveHandlers: ProxyHandler<object> = {
 // Props handlers are special in the sense that it should not unwrap top-level
 // refs (in order to allow refs to be explicitly passed down), but should
 // retain the reactivity of the normal readonly object.
+
+// prop处理程序是特殊的，它不应解开顶级ref（以使ref被显式传递），而应保留普通readonly对象的反应性。
+// 浅只读，重写了get方法，说明readonlyHandlers的get应该是解开了顶级ref
 export const shallowReadonlyHandlers: ProxyHandler<object> = {
   ...readonlyHandlers,
   get: shallowReadonlyGet
