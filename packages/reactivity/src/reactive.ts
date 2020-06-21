@@ -71,11 +71,7 @@ export function reactive(target: object) {
   if (target && (target as Target).__v_isReadonly) {
     return target
   }
-<<<<<<< HEAD
-  // console.log('target----',target)
-=======
   //创建响应式对象
->>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
   return createReactiveObject(
     target,
     false,
@@ -148,12 +144,9 @@ function createReactiveObject(
   // target already has corresponding Proxy
   // hasOwn: hasOwnProperty.call(val, key)
   // console.log(hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive))
-<<<<<<< HEAD
-=======
   // 如果isReadonly是只读的，判断target是否有__v_isReadonly属性，否则判断是否有__v_isReactive属性
   // 说白了就是判断 是否存在target.__v_isReadonly或target.__v_isReactive
   hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive)
->>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
   if (
     hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive)
   ) {

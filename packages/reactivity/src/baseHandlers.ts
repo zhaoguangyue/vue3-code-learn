@@ -38,12 +38,6 @@ function createGetter(isReadonly = false, shallow = false) {
     } else if (key === '__v_raw') {
       return target
     }
-    console.log(
-      '%c -----------createGetter---------',
-      'color: #09e;font-size:16px'
-    )
-    // console.log(target)
-    // console.log('key----',key)
     //响应值是否为数组
     const targetIsArray = isArray(target)
     //如果是数组，返回 target[key] key是下标
