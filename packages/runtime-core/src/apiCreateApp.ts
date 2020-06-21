@@ -1,17 +1,12 @@
-import {
-  Component,
-  Data,
-  validateComponentName,
-  PublicAPIComponent
-} from './component'
+import { Component, Data, PublicAPIComponent } from './component'
 import { ComponentOptions } from './componentOptions'
 import { ComponentPublicInstance } from './componentProxy'
-import { Directive, validateDirectiveName } from './directives'
+import { Directive } from './directives'
 import { RootRenderFunction } from './renderer'
 import { InjectionKey } from './apiInject'
-import { isFunction, NO, isObject } from '@vue/shared'
+import { isFunction, NO } from '@vue/shared'
 import { warn } from './warning'
-import { createVNode, cloneVNode, VNode } from './vnode'
+import { createVNode, VNode } from './vnode'
 import { RootHydrateFunction } from './hydration'
 
 export interface App<HostElement = any> {
@@ -109,6 +104,18 @@ export function createAppAPI<HostElement>(
   render: RootRenderFunction,
   hydrate?: RootHydrateFunction
 ): CreateAppFunction<HostElement> {
+  /**
+   * rootComponent
+   * 其实就是
+   *  const App = {
+        template: `{{ count }}`,
+        data() {
+          return {
+            count: 0
+          }
+        }
+      }
+   */
   return function createApp(rootComponent, rootProps = null) {
     const context = createAppContext()
     const installedPlugins = new Set()
@@ -123,14 +130,6 @@ export function createAppAPI<HostElement>(
 
       get config() {
         return context.config
-      },
-
-      set config(v) {
-        if (__DEV__) {
-          warn(
-            `app.config cannot be replaced. Modify individual options instead.`
-          )
-        }
       },
 
       use(plugin: Plugin, ...options: any[]) {
@@ -156,9 +155,6 @@ export function createAppAPI<HostElement>(
       },
 
       component(name: string, component?: PublicAPIComponent): any {
-        if (__DEV__) {
-          validateComponentName(name, context.config)
-        }
         if (!component) {
           return context.components[name]
         }
@@ -167,7 +163,6 @@ export function createAppAPI<HostElement>(
       },
 
       directive(name: string, directive?: Directive) {
-    
         if (!directive) {
           return context.directives[name] as any
         }
@@ -182,7 +177,6 @@ export function createAppAPI<HostElement>(
           // this will be set on the root instance on initial mount.
           vnode.appContext = context
 
-         
           if (isHydrate && hydrate) {
             hydrate(vnode as VNode<Node, Element>, rootContainer as any)
           } else {
@@ -197,18 +191,10 @@ export function createAppAPI<HostElement>(
       unmount() {
         if (isMounted) {
           render(null, app._container)
-        } else if (__DEV__) {
-          warn(`Cannot unmount an app that is not mounted.`)
         }
       },
 
       provide(key, value) {
-        if (__DEV__ && key in context.provides) {
-          warn(
-            `App already provides property with key "${String(key)}". ` +
-              `It will be overwritten with the new value.`
-          )
-        }
         // TypeScript doesn't allow symbols as index type
         // https://github.com/Microsoft/TypeScript/issues/24587
         context.provides[key as string] = value

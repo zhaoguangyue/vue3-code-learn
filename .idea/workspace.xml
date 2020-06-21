@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="937e0d1f-dc95-40c4-ba88-5cc06ce0f4f6" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vue/learn/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue/learn/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1070175852">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="15" />
+          <entry key="js" value="13" />
+          <entry key="json" value="7" />
+          <entry key="lock" value="1" />
+          <entry key="prettierrc" value="1" />
+          <entry key="ts" value="49" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="15" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="13" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="TypeScript" value="49" />
+          <entry key="YAML" value="1" />
+          <entry key="tsconfig" value="1" />
+          <entry key="yarn.lock" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1415" />
+          <entry key="js" value="86" />
+          <entry key="json" value="2" />
+          <entry key="ts" value="6053" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1415" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="86" />
+          <entry key="TypeScript" value="6053" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/vue/learn/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="1055" column="13" lean-forward="true" selection-start-line="1055" selection-start-column="13" selection-end-line="1055" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#212#0" expanded="true" />
+                <element signature="e#1691#1780#0" />
+                <element signature="e#1843#1877#0" />
+                <element signature="e#3185#3263#0" />
+                <element signature="e#3472#3496#0" />
+                <element signature="e#3556#3631#0" />
+                <element signature="e#3834#4043#0" />
+                <element signature="e#4045#4125#0" />
+                <element signature="e#6624#6682#0" />
+                <element signature="e#6710#6735#0" />
+                <element signature="e#6833#7029#0" />
+                <element signature="e#6844#7027#0" />
+                <element signature="e#7297#8705#0" />
+                <element signature="e#7372#7394#0" />
+                <element signature="e#7400#7675#0" />
+                <element signature="e#7531#7551#0" />
+                <element signature="e#7603#7641#0" />
+                <element signature="e#7647#7671#0" />
+                <element signature="e#7732#7911#0" />
+                <element signature="e#8126#8331#0" />
+                <element signature="e#8154#8269#0" />
+                <element signature="e#8220#8263#0" />
+                <element signature="e#8294#8327#0" />
+                <element signature="e#8354#8452#0" />
+                <element signature="e#8411#8448#0" />
+                <element signature="e#8474#8501#0" />
+                <element signature="e#8528#8612#0" />
+                <element signature="e#8631#8703#0" />
+                <element signature="e#8707#9200#0" />
+                <element signature="e#32320#34350#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/reactive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!block;n#Target#0" />
+                <element signature="n#!!block;n#reactive#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/ref.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/operations.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-947">
+              <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!block;n#deleteProperty#0" />
+                <element signature="n#!!block;n#has#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/effect.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="300" column="43" lean-forward="true" selection-start-line="300" selection-start-column="43" selection-end-line="300" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#110#177#0" />
+                <element signature="n#!!block;n#ReactiveEffect#0" />
+                <element signature="n#!!block;n#ReactiveEffectOptions#0" />
+                <element signature="n#!!block;n#DebuggerEventExtraInfo#0" />
+                <element signature="n#!!block;n#stop#0" />
+                <element signature="n#!!block;n#cleanup#0" />
+                <element signature="n#!!block;n#pauseTracking#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/computed.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/collectionHandlers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/reactivity/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>resetTracking</find>
+      <find>activeEffect =</find>
+      <find>activeEffect =</find>
+      <find>console</find>
+      <find>createReactiveEffect</find>
+      <find>isObject(res)</find>
+      <find>new Proxy</find>
+      <find>tract</find>
+      <find>reactive</find>
+      <find>targetIsArray</find>
+      <find>shallow</find>
+      <find>createGetter</find>
+      <find>trac</find>
+      <find>shallowGet</find>
+      <find>__v_isRef</find>
+      <find>console.log(target);</find>
+      <find>start</find>
+      <find>activeEffect</find>
+      <find>effect</find>
+      <find>track</find>
+      <find>effect(</find>
+      <find>arr</find>
+      <find>createReactiveObject</find>
+      <find>toRaw</find>
+      <find>deps</find>
+      <find>trigger</find>
+      <find>ITERATE_KEY</find>
+      <find>computedRunners</find>
+      <find>MAP_KEY_ITERATE_KEY</find>
+      <find>TriggerOpTypes.CLEAR</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/packages/runtime-core</dir>
+      <dir>$PROJECT_DIR$/packages/vue</dir>
+      <dir>$PROJECT_DIR$/packages/reactivity/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/packages/runtime-dom/src/index.ts" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/index.html" />
+        <option value="$PROJECT_DIR$/packages/vue/learn/vue/com1.js" />
+        <option value="$PROJECT_DIR$/packages/shared/src/patchFlags.ts" />
+        <option value="$PROJECT_DIR$/packages/shared/src/shapeFlags.ts" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/vnode.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/index.ts" />
+        <option value="$PROJECT_DIR$/packages/shared/src/makeMap.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/dist/vue.global.js" />
+        <option value="$PROJECT_DIR$/packages/runtime-core/src/renderer.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/reactive.ts" />
+        <option value="$PROJECT_DIR$/packages/vue/learn/index.html" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" />
+        <option value="$PROJECT_DIR$/packages/reactivity/src/effect.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/compiler-core/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/compiler-sfc/node_modules" />
+    <handled-path value="$PROJECT_DIR$/packages/vue/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-core/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-dom/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-sfc/package.json" />
+      <path value="$PROJECT_DIR$/packages/compiler-ssr/package.json" />
+      <path value="$PROJECT_DIR$/packages/reactivity/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-core/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-dom/package.json" />
+      <path value="$PROJECT_DIR$/packages/runtime-test/package.json" />
+      <path value="$PROJECT_DIR$/packages/server-renderer/package.json" />
+      <path value="$PROJECT_DIR$/packages/shared/package.json" />
+      <path value="$PROJECT_DIR$/packages/size-check/package.json" />
+      <path value="$PROJECT_DIR$/packages/template-explorer/package.json" />
+      <path value="$PROJECT_DIR$/packages/vue/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="309" />
+    <option name="y" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler-sfc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="compiler-sfc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-dom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime-dom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="template-explorer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue3-code-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue3-code-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/vue/learn" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="937e0d1f-dc95-40c4-ba88-5cc06ce0f4f6" name="默认更改列表" comment="" />
+      <created>1590632234691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590632234691</updated>
+      <workItem from="1590632239790" duration="2841000" />
+      <workItem from="1590649972892" duration="34201000" />
+      <workItem from="1591168211166" duration="14933000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="77995000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="309" y="1080" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19301033" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32913166" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32913166" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>1817</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>2048</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>2059</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>403</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts</url>
+          <line>511</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts</url>
+          <line>114</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/rollup.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="253" column="19" selection-start-line="253" selection-start-column="19" selection-end-line="253" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ls-lint.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/scheduler.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-dom/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/apiCreateApp.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/composition/markdown.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/composition/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/composition/commits.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/transition/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/utils.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/api-extractor.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/transition/modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/transition/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/composition/tree.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/composition/todomvc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/classic/commits.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/helpers/resolveAssets.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/learn/vue/com1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/examples/classic/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/shapeFlags.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/patchFlags.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="95" column="11" lean-forward="true" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/compiler-dom/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/compiler-sfc/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/apiAsyncComponent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="173" column="20" lean-forward="true" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/vnode.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="403" column="21" lean-forward="true" selection-start-line="403" selection-start-column="21" selection-end-line="403" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/makeMap.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="1380" column="4" selection-start-line="1380" selection-start-column="4" selection-end-line="1380" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/shared/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/runtime.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/dist/vue.global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="5163" column="25" selection-start-line="5163" selection-start-column="25" selection-end-line="5163" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/src/devCheck.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/dist/runtime-core.esm-bundler.js" />
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/__tests__/computed.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/collectionHandlers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/vue/learn/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/runtime-core/src/renderer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="1055" column="13" lean-forward="true" selection-start-line="1055" selection-start-column="13" selection-end-line="1055" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#212#0" expanded="true" />
+            <element signature="e#1691#1780#0" />
+            <element signature="e#1843#1877#0" />
+            <element signature="e#3185#3263#0" />
+            <element signature="e#3472#3496#0" />
+            <element signature="e#3556#3631#0" />
+            <element signature="e#3834#4043#0" />
+            <element signature="e#4045#4125#0" />
+            <element signature="e#6624#6682#0" />
+            <element signature="e#6710#6735#0" />
+            <element signature="e#6833#7029#0" />
+            <element signature="e#6844#7027#0" />
+            <element signature="e#7297#8705#0" />
+            <element signature="e#7372#7394#0" />
+            <element signature="e#7400#7675#0" />
+            <element signature="e#7531#7551#0" />
+            <element signature="e#7603#7641#0" />
+            <element signature="e#7647#7671#0" />
+            <element signature="e#7732#7911#0" />
+            <element signature="e#8126#8331#0" />
+            <element signature="e#8154#8269#0" />
+            <element signature="e#8220#8263#0" />
+            <element signature="e#8294#8327#0" />
+            <element signature="e#8354#8452#0" />
+            <element signature="e#8411#8448#0" />
+            <element signature="e#8474#8501#0" />
+            <element signature="e#8528#8612#0" />
+            <element signature="e#8631#8703#0" />
+            <element signature="e#8707#9200#0" />
+            <element signature="e#32320#34350#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/reactive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="196" column="16" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!block;n#Target#0" />
+            <element signature="n#!!block;n#reactive#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/operations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/ref.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/computed.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!block;n#deleteProperty#0" />
+            <element signature="n#!!block;n#has#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactivity/src/effect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="300" column="43" lean-forward="true" selection-start-line="300" selection-start-column="43" selection-end-line="300" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#110#177#0" />
+            <element signature="n#!!block;n#ReactiveEffect#0" />
+            <element signature="n#!!block;n#ReactiveEffectOptions#0" />
+            <element signature="n#!!block;n#DebuggerEventExtraInfo#0" />
+            <element signature="n#!!block;n#stop#0" />
+            <element signature="n#!!block;n#cleanup#0" />
+            <element signature="n#!!block;n#pauseTracking#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

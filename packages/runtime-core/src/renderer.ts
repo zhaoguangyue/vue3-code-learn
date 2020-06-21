@@ -395,12 +395,16 @@ function baseCreateRenderer(
     insertStaticContent: hostInsertStaticContent
   } = options
 
-  // Note: functions inside this closure should use `const xxx = () => {}`
-  // style in order to prevent being inlined by minifiers.
   const patch: PatchFn = (
+<<<<<<< HEAD
     n1, //container.vNode
     n2, //vNode
     container, //container
+=======
+    n1, //null
+    n2, //app虚拟dom
+    container, //#app容器
+>>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
     anchor = null,
     parentComponent = null,
     parentSuspense = null,
@@ -408,18 +412,25 @@ function baseCreateRenderer(
     optimized = false
   ) => {
     // patching & not same type, unmount old tree
+    //如果n1和n2有相同type和key,卸载旧tree
     if (n1 && !isSameVNodeType(n1, n2)) {
       anchor = getNextHostNode(n1)
       unmount(n1, parentComponent, parentSuspense, true)
       n1 = null
     }
 
+    // console.log('n2---------', n2)
     if (n2.patchFlag === PatchFlags.BAIL) {
       optimized = false
       n2.dynamicChildren = null
     }
 
     const { type, ref, shapeFlag } = n2
+    // console.log('-----------n1---------', n1)
+    // console.log('-----------n2---------', n2)
+    // export const Text = Symbol(__DEV__ ? 'Text' : undefined)
+    // export const Comment = Symbol(__DEV__ ? 'Comment' : undefined)
+    // export const Static = Symbol(__DEV__ ? 'Static' : undefined)
     switch (type) {
       case Text:
         processText(n1, n2, container, anchor)
@@ -430,8 +441,6 @@ function baseCreateRenderer(
       case Static:
         if (n1 == null) {
           mountStaticNode(n2, container, anchor, isSVG)
-        } else if (__DEV__) {
-          patchStaticNode(n1, n2, container, isSVG)
         }
         break
       case Fragment:
@@ -494,8 +503,6 @@ function baseCreateRenderer(
             optimized,
             internals
           )
-        } else if (__DEV__) {
-          warn('Invalid VNode type:', type, `(${typeof type})`)
         }
     }
 
@@ -552,33 +559,6 @@ function baseCreateRenderer(
       anchor,
       isSVG
     )
-  }
-
-  /**
-   * Dev / HMR only
-   */
-  const patchStaticNode = (
-    n1: VNode,
-    n2: VNode,
-    container: RendererElement,
-    isSVG: boolean
-  ) => {
-    // static nodes are only patched during dev for HMR
-    if (n2.children !== n1.children) {
-      const anchor = hostNextSibling(n1.anchor!)
-      // remove existing
-      removeStaticNode(n1)
-      // insert new
-      ;[n2.el, n2.anchor] = hostInsertStaticContent!(
-        n2.children as string,
-        container,
-        anchor,
-        isSVG
-      )
-    } else {
-      n2.el = n1.el
-      n2.anchor = n1.anchor
-    }
   }
 
   /**
@@ -1261,9 +1241,15 @@ function baseCreateRenderer(
         } else {
           next = vnode
         }
+<<<<<<< HEAD
         
         const nextTree = renderComponentRoot(instance)
         
+=======
+
+        const nextTree = renderComponentRoot(instance)
+
+>>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
         const prevTree = instance.subTree
         console.log('prevTree----------',prevTree)
         console.log('nextTree----------',nextTree)
@@ -1282,6 +1268,10 @@ function baseCreateRenderer(
         if (instance.refs !== EMPTY_OBJ) {
           instance.refs = {}
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
         patch(
           prevTree,
           nextTree,
@@ -1293,7 +1283,11 @@ function baseCreateRenderer(
           parentSuspense,
           isSVG
         )
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
         next.el = nextTree.el
         if (next === null) {
           // self-triggered update. In case of HOC, update parent component
@@ -1311,7 +1305,10 @@ function baseCreateRenderer(
             invokeVNodeHook(vnodeHook!, parent, next!, vnode)
           }, parentSuspense)
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 355af3b05786135fc276ff120108afbc0510fc11
       }
     }, __DEV__ ? createDevEffectOptions(instance) : prodEffectOptions)
   }
@@ -2018,6 +2015,7 @@ function baseCreateRenderer(
     }
   }
 
+  //接受一个虚拟节点，和容器作为参数
   const render: RootRenderFunction = (vnode, container) => {
     if (vnode == null) {
       if (container._vnode) {
@@ -2026,6 +2024,7 @@ function baseCreateRenderer(
     } else {
       patch(container._vnode || null, vnode, container)
     }
+    //将回调队列的所有回调方法全部执行
     flushPostFlushCbs()
     container._vnode = vnode
   }

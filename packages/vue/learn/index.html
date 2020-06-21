@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="../dist/vue.global.js"></script>
+    <script type="module">
+        const {createApp, reactive, readonly, computed, isProxy, isReactive, isReadonly, markRaw, toRaw} = Vue
+        console.log(Vue)
+        const app = {
+            template: `
+                <div>
+                       <!--<div>{{state.animal.dog.prop.name}}</div>-->
+                       <div>{{a}}</div>
+                       <!--<div>{{arr[0]}}</div>-->
+                       <div>{{data.name}}</div>
+                       <div>{{data.name+2}}</div>
+                       <div>{{data.count}}</div>
+                       <button @click="handlerClick">点击</button>
+                </div>`,
+            setup() {
+                const state = readonly({
+                  animal: {
+                    dog: {
+                      prop: {
+                        name: 1
+                      }
+                    }
+                  },
+                })
+                const data = reactive({
+                  count: 12345,
+                  name: 'abc',
+                  visible: true
+                })
+                let a = computed(()=>{
+                  let caa = data.count*2+data.name
+                  return caa
+                })
+
+                const handlerClick = ()=>{
+                  data.count++
+                }
+                return {
+                    a,
+                    state,
+                    data,
+                    handlerClick
+                }
+            }
+        }
+        createApp(app).mount('#app')
+    </script>
+</body>
+</html>
