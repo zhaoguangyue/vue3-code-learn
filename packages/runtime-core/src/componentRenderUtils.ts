@@ -54,11 +54,9 @@ export function renderComponentRoot(
 
   let result
   currentRenderingInstance = instance
-  if (__DEV__) {
-    accessedAttrs = false
-  }
   try {
     let fallthroughAttrs
+    
     if (vnode.shapeFlag & ShapeFlags.STATEFUL_COMPONENT) {
       // withProxy is a proxy with a different `has` trap only for
       // runtime-compiled render functions using `with` block.
@@ -78,16 +76,7 @@ export function renderComponentRoot(
         render.length > 1
           ? render(
               props,
-              __DEV__
-                ? {
-                    get attrs() {
-                      markAttrsAccessed()
-                      return attrs
-                    },
-                    slots,
-                    emit
-                  }
-                : { attrs, slots, emit }
+              { attrs, slots, emit }
             )
           : render(props, null as any /* we know it doesn't need it */)
       )
@@ -98,10 +87,6 @@ export function renderComponentRoot(
     // in dev mode, comments are preserved, and it's possible for a template
     // to have comments along side the root element which makes it a fragment
     let root = result
-    let setRoot: ((root: VNode) => void) | undefined = undefined
-    if (__DEV__) {
-      ;[root, setRoot] = getChildRoot(result)
-    }
 
     if (
       Component.inheritAttrs !== false &&
@@ -113,37 +98,6 @@ export function renderComponentRoot(
         root.shapeFlag & ShapeFlags.COMPONENT
       ) {
         root = cloneVNode(root, fallthroughAttrs)
-      } else if (__DEV__ && !accessedAttrs && root.type !== Comment) {
-        const allAttrs = Object.keys(attrs)
-        const eventAttrs: string[] = []
-        const extraAttrs: string[] = []
-        for (let i = 0, l = allAttrs.length; i < l; i++) {
-          const key = allAttrs[i]
-          if (isOn(key)) {
-            // remove `on`, lowercase first letter to reflect event casing accurately
-            eventAttrs.push(key[2].toLowerCase() + key.slice(3))
-          } else {
-            extraAttrs.push(key)
-          }
-        }
-        if (extraAttrs.length) {
-          warn(
-            `Extraneous non-props attributes (` +
-              `${extraAttrs.join(', ')}) ` +
-              `were passed to component but could not be automatically inherited ` +
-              `because component renders fragment or text root nodes.`
-          )
-        }
-        if (eventAttrs.length) {
-          warn(
-            `Extraneous non-emits event listeners (` +
-              `${eventAttrs.join(', ')}) ` +
-              `were passed to component but could not be automatically inherited ` +
-              `because component renders fragment or text root nodes. ` +
-              `If the listener is intended to be a component custom event listener only, ` +
-              `declare it using the "emits" option.`
-          )
-        }
       }
     }
 
@@ -154,22 +108,10 @@ export function renderComponentRoot(
     }
     // inherit directives
     if (vnode.dirs) {
-      if (__DEV__ && !isElementRoot(root)) {
-        warn(
-          `Runtime directive used on component with non-element root node. ` +
-            `The directives will not function as intended.`
-        )
-      }
       root.dirs = vnode.dirs
     }
     // inherit transition data
     if (vnode.transition) {
-      if (__DEV__ && !isElementRoot(root)) {
-        warn(
-          `Component inside <Transition> renders non-element root node ` +
-            `that cannot be animated.`
-        )
-      }
       root.transition = vnode.transition
     }
     // inherit ref
@@ -177,11 +119,7 @@ export function renderComponentRoot(
       root.ref = vnode.ref
     }
 
-    if (__DEV__ && setRoot) {
-      setRoot(root)
-    } else {
-      result = root
-    }
+    result = root
   } catch (err) {
     handleError(err, instance, ErrorCodes.RENDER_FUNCTION)
     result = createVNode(Comment)

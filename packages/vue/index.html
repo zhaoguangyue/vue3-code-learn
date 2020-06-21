@@ -10,10 +10,30 @@
     <script src="./dist/vue.global.js"></script>
     <script type="module">
         console.log(Vue)
+        const component1 = {
+            template: `<div>{{state.name}} <button @click="handlerClick">+</button></div>`,
+            setup() {
+                console.log(1111)
+                const state = reactive({
+                    name:12345
+                })
+                function handlerClick(){
+                    state.name++
+                }
+                return {
+                    state,
+                    handlerClick
+                }
+            }
+        }
         var {createApp, reactive } = Vue
         const app = {
-            template: `<div>{{state.name}}</div>`,
+            template: `<div>123<component1 /></div>`,
+            components:{
+                component1
+            },
             setup() {
+                console.log(2222)
                 const state = reactive({
                     name:12345
                 })
@@ -22,6 +42,7 @@
                 }
             }
         }
+        var a = ''
         createApp(app).mount('#app')
     </script>
 </body>

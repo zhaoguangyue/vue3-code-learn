@@ -69,7 +69,7 @@ export function reactive(target: object) {
   if (target && (target as Target).__v_isReadonly) {
     return target
   }
-  console.log('target----',target)
+  // console.log('target----',target)
   return createReactiveObject(
     target,
     false,
@@ -141,7 +141,7 @@ function createReactiveObject(
   }
   // target already has corresponding Proxy
   // hasOwn: hasOwnProperty.call(val, key)
-  console.log(hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive))
+  // console.log(hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive))
   if (
     hasOwn(target, isReadonly ? ReactiveFlags.readonly : ReactiveFlags.reactive)
   ) {

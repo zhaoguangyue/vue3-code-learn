@@ -233,14 +233,10 @@ export function isVNode(value: any): value is VNode {
 }
 
 export function isSameVNodeType(n1: VNode, n2: VNode): boolean {
-  if (
-    __DEV__ &&
-    n2.shapeFlag & ShapeFlags.COMPONENT &&
-    (n2.type as Component).__hmrUpdated
-  ) {
-    // HMR only: if the component has been hot-updated, force a reload.
-    return false
-  }
+  console.log('n1.type',n1.type)
+  console.log('n1.key',n1.key)
+  console.log('n2.type',n2.type)
+  console.log('n2.key',n2.key)
   return n1.type === n2.type && n1.key === n2.key
 }
 
@@ -296,9 +292,6 @@ function _createVNode(
   isBlockNode = false
 ): VNode {
   if (!type || type === NULL_DYNAMIC_COMPONENT) {
-    if (__DEV__ && !type) {
-      warn(`Invalid vnode type when creating vnode: ${type}.`)
-    }
     type = Comment
   }
 
@@ -339,18 +332,6 @@ function _createVNode(
           : isFunction(type)
             ? ShapeFlags.FUNCTIONAL_COMPONENT
             : 0
-
-  if (__DEV__ && shapeFlag & ShapeFlags.STATEFUL_COMPONENT && isProxy(type)) {
-    type = toRaw(type)
-    warn(
-      `Vue received a Component which was made a reactive object. This can ` +
-        `lead to unnecessary performance overhead, and should be avoided by ` +
-        `marking the component with \`markRaw\` or using \`shallowRef\` ` +
-        `instead of \`ref\`.`,
-      `\nComponent that was made reactive: `,
-      type
-    )
-  }
 
   const vnode: VNode = {
     __v_isVNode: true,
@@ -399,7 +380,6 @@ function _createVNode(
     currentBlock.push(vnode)
   }
 
-  console.log('vnode-----',vnode)
   return vnode
 }
 

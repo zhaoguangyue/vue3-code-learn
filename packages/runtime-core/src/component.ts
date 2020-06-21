@@ -443,23 +443,6 @@ function setupStatefulComponent(
 ) {
   const Component = instance.type as ComponentOptions
 
-  if (__DEV__) {
-    if (Component.name) {
-      validateComponentName(Component.name, instance.appContext.config)
-    }
-    if (Component.components) {
-      const names = Object.keys(Component.components)
-      for (let i = 0; i < names.length; i++) {
-        validateComponentName(names[i], instance.appContext.config)
-      }
-    }
-    if (Component.directives) {
-      const names = Object.keys(Component.directives)
-      for (let i = 0; i < names.length; i++) {
-        validateDirectiveName(names[i])
-      }
-    }
-  }
   // 0. create render proxy property access cache
   instance.accessCache = {}
   // 1. create public instance / render proxy

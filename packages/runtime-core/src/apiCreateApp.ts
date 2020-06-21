@@ -177,7 +177,6 @@ export function createAppAPI<HostElement>(
 
       mount(rootContainer: HostElement, isHydrate?: boolean): any {
         if (!isMounted) {
-          console.log(1111111111)
           const vnode = createVNode(rootComponent as Component, rootProps)
           // store app context on the root VNode.
           // this will be set on the root instance on initial mount.

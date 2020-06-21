@@ -175,6 +175,9 @@ export function trigger(
     // never been tracked
     return
   }
+  console.log('target-----------',target)
+  console.log(depsMap)
+  console.log(targetMap)
 
   const effects = new Set<ReactiveEffect>()
   const computedRunners = new Set<ReactiveEffect>()
